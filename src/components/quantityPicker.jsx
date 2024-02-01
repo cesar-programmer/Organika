@@ -17,9 +17,9 @@ export default function QuantityPicker() {
 
   return (
     <div className="quantity-picker">
-      <button onClick={decrease}>-</button>
+      <button class='btn btn-primary' disabled = {quantity === 1} onClick={decrease}>-</button>
       <label>{quantity}</label>
-      <button onClick={increase}>+</button>
+      <button class='btn btn-primary'onClick={increase}>+</button>
     </div>
   )
 }

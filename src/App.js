@@ -1,17 +1,16 @@
 import Navbar from './components/navbar';
 import Footer from './components/footer';
-import QuantityPicker from './components/quantityPicker';
+import Catalog from './pages/catalog';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 import './App.css';
 
 function App() {
   return (
     <div className="App">
     <Navbar />
-    <h1>
-      hello world
-    </h1>
+    <Catalog />
     <Footer />
-    <QuantityPicker />
     </div>
   );
 }
