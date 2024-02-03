@@ -1,11 +1,13 @@
 import './products.css'
 import QuantityPicker from './quantityPicker'
 
-export default function Products() {
+export default function Products({ product }) {
   return (
     <div className="products">
-    <img src="https://th.bing.com/th/id/OIG1.dQ1Hsi1n6D65.Qbbo5az?pid=ImgGn" alt="product" />
-      <h2>hello im a product</h2>
+      <img src={product.image} alt={product.title} />
+      <h2>{product.title}</h2>
+      <h3>${product.price}</h3>
+      <p>{product.category}</p>
       <QuantityPicker />
     </div>
   )
